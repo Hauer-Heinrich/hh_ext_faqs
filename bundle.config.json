@@ -1,0 +1,26 @@
+[
+    {
+        "outdir": ".",
+        "entryPoints": [
+            { "in": "./Resources/Public/Css/faq.css", "out": "./Resources/Public/Css/bundles/faq.bundle" },
+            { "in": "./Resources/Public/JavaScript/faq-search.js", "out": "./Resources/Public/JavaScript/bundles/faq-search.bundle" }
+        ],
+        "bundle": true,
+        "write": true,
+        "minify": true,
+        "sourcemap": true,
+        "logLevel": "info",
+        "external": [
+            "./Images/*", "../Images/*", "../../Images/*",
+            "./Fonts/*", "../Fonts/*",
+            "./Icons/*", "../Icons/*", "../../Icons/*",
+            "./Static/*", "../Static/*",
+            "./public/*", "../public/*",
+            "./static/*", "../static/*"
+        ],
+        "supported": {
+            "nesting": false,
+            "is-pseudo-class": false
+        }
+    }
+]

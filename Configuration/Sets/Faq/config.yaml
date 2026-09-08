@@ -1,0 +1,4 @@
+name: hauerheinrich/hh-ext-faqs
+label: FAQ
+dependencies:
+  - typo3/fluid-styled-content

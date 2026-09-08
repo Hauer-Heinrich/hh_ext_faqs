@@ -1,0 +1,31 @@
+# Constants for the classic static template include "FAQ (hh_ext_faqs)".
+# When the site set is used instead, these values come from the set settings
+# (Configuration/Sets/Faq/settings.definitions.yaml).
+
+hhExtFaqs {
+    view {
+        # cat=hh_ext_faqs/file; type=string; label=Template root path: Path to overriding Fluid templates
+        templateRootPath =
+        # cat=hh_ext_faqs/file; type=string; label=Partial root path: Path to overriding Fluid partials
+        partialRootPath =
+        # cat=hh_ext_faqs/file; type=string; label=Layout root path: Path to overriding Fluid layouts
+        layoutRootPath =
+    }
+
+    settings {
+        # cat=hh_ext_faqs/settings; type=boolean; label=Render schema.org FAQPage JSON-LD
+        structuredData = 1
+
+        # cat=hh_ext_faqs/settings; type=boolean; label=Include CSS for List-View
+        includeListCss = 1
+
+        # cat=hh_ext_faqs/settings; type=boolean; label=Include JavaScript for List-View
+        includeListJavaScript = 1
+
+        # cat=hh_ext_faqs/settings; type=boolean; label=Include CSS for Search-View
+        includeSearchCss = 1
+
+        # cat=hh_ext_faqs/settings; type=boolean; label=Include JavaScript for Search-View
+        includeSearchJavaScript = 1
+    }
+}

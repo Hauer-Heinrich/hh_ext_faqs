@@ -1,0 +1,50 @@
+{
+    "name": "hauerheinrich/hh-ext-faqs",
+    "type": "typo3-cms-extension",
+    "description": "Accessible, SEO friendly FAQ extension with live frontend search and jpfaq migration wizards",
+    "keywords": [ "TYPO3 CMS", "TYPO3", "faq", "extension" ],
+    "homepage": "https://www.hauer-heinrich.de",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Christian Hackl",
+            "homepage": "https://www.hauer-heinrich.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Hauer-Heinrich/hh_ext_faqs/issues",
+        "source": "https://github.com/Hauer-Heinrich/hh_ext_faqs",
+        "docs": "https://github.com/Hauer-Heinrich/hh_ext_faqs/blob/master/README.md"
+    },
+    "funding": [
+        {
+            "type": "paypal",
+            "url": "https://www.paypal.com/paypalme/hauerheinrich"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-extbase": "^13.4",
+        "typo3/cms-fluid": "^13.4",
+        "typo3/cms-fluid-styled-content": "^13.4",
+        "typo3/cms-frontend": "^13.4",
+        "typo3/cms-install": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "HauerHeinrich\\HhExtFaqs\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/Web",
+            "extension-key": "hh_ext_faqs",
+            "version": "1.0.0",
+            "Package": {
+                "providesPackages": {}
+            }
+        }
+    }
+}

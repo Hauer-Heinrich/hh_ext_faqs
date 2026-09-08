@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <f:if condition="{settings.includeSearchCss}">
+        <f:asset.css identifier="hhextfaqs.search" href="EXT:hh_ext_faqs/Resources/Public/Css/bundles/faq.bundle.css" />
+    </f:if>
+    <f:if condition="{settings.includeSearchJavaScript}">
+        <f:asset.script identifier="hhextfaqs.search" src="EXT:hh_ext_faqs/Resources/Public/JavaScript/bundles/faq-search.bundle.js" defer="defer" />
+    </f:if>
+
+    <search class="faq-search">
+        <form class="faq-search--form" role="search">
+            <div class="field-wrap">
+                <label class="faq-search--label" for="faq-search-input-{data.uid}">
+                    <f:translate key="LLL:EXT:hh_ext_faqs/Resources/Private/Language/locallang.xlf:search.label" />
+                </label>
+                <input class="faq-search--input"
+                    type="search"
+                    id="faq-search-input-{data.uid}"
+                    name="faq-search-{data.uid}"
+                    autocomplete="off"
+                    spellcheck="false"
+                    placeholder="{f:translate(key: 'LLL:EXT:hh_ext_faqs/Resources/Private/Language/locallang.xlf:search.placeholder')}"
+                    aria-describedby="faq-search-hint-{data.uid}"
+                    data-faq-search
+                    data-faq-targets="{targets}"
+                    data-auto-expand="{autoExpand}"
+                    data-min-chars="3"
+                    data-msg-results="{f:translate(key: 'LLL:EXT:hh_ext_faqs/Resources/Private/Language/locallang.xlf:search.status.results')}"
+                    data-msg-no-results="{f:translate(key: 'LLL:EXT:hh_ext_faqs/Resources/Private/Language/locallang.xlf:search.status.noResults')}"
+                />
+            </div>
+            <p class="faq-search--hint" id="faq-search-hint-{data.uid}">
+                <f:translate key="LLL:EXT:hh_ext_faqs/Resources/Private/Language/locallang.xlf:search.hint" />
+            </p>
+            <p class="faq-search--status" role="status" aria-live="polite" data-faq-search-status></p>
+        </form>
+    </search>
+</f:section>
+
+</html>

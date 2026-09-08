@@ -1,0 +1,55 @@
+# Frontend rendering for the hh_ext_faqs content elements.
+#
+# This file is loaded per site / root tree, either via the "FAQ" site set
+# (hauerheinrich/hh-ext-faqs) or via the classic static template include "FAQ (hh_ext_faqs)".
+# Sites without one of the two do not render these content elements.
+
+tt_content.hhextfaqs_list =< lib.contentElement
+tt_content.hhextfaqs_list {
+    templateName = Generic
+
+    20 = EXTBASEPLUGIN
+    20 {
+        extensionName = HhExtFaqs
+        pluginName = List
+    }
+}
+
+tt_content.hhextfaqs_search =< lib.contentElement
+tt_content.hhextfaqs_search {
+    templateName = Generic
+
+    20 = EXTBASEPLUGIN
+    20 {
+        extensionName = HhExtFaqs
+        pluginName = Search
+    }
+}
+
+plugin.tx_hhextfaqs {
+    view {
+        templateRootPaths {
+            0 = EXT:hh_ext_faqs/Resources/Private/Templates/
+            10 = {$hhExtFaqs.view.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:hh_ext_faqs/Resources/Private/Partials/
+            10 = {$hhExtFaqs.view.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:hh_ext_faqs/Resources/Private/Layouts/
+            10 = {$hhExtFaqs.view.layoutRootPath}
+        }
+    }
+
+    settings {
+        # Render schema.org FAQPage JSON-LD by default (can be disabled per plugin instance)
+        structuredData = {$hhExtFaqs.settings.structuredData}
+
+        includeListCss = {$hhExtFaqs.settings.includeListCss}
+        includeListJavaScript = {$hhExtFaqs.settings.includeListJavaScript}
+
+        includeSearchCss = {$hhExtFaqs.settings.includeSearchCss}
+        includeSearchJavaScript = {$hhExtFaqs.settings.includeSearchJavaScript}
+    }
+}

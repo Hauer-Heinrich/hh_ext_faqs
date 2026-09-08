@@ -1,0 +1,62 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <f:if condition="{settings.includeListCss}">
+        <f:asset.css identifier="hhextfaqs.list" href="EXT:hh_ext_faqs/Resources/Public/Css/bundles/faq.bundle.css" />
+    </f:if>
+
+    <div class="hhextfaqs" data-faq-list="{data.uid}">
+        <f:if condition="{faqs}">
+            <f:then>
+                <ul class="list" role="list">
+                    <f:for each="{faqs}" as="faq">
+                        <li data-faq-item>
+                            <details id="faq-{faq.uid}">
+                                <summary>
+                                    <h3>{faq.question}</h3>
+                                </summary>
+
+                                <div class="answer">
+                                    <f:format.html>{faq.answer}</f:format.html>
+
+                                    <f:if condition="{faq.media}">
+                                        <div class="media">
+                                            <f:for each="{faq.media}" as="mediaItem">
+                                                <figure class="figure">
+                                                    <f:media
+                                                        file="{mediaItem}"
+                                                        alt="{mediaItem.originalResource.alternative}"
+                                                        title="{mediaItem.originalResource.title}"
+                                                        loading="lazy"
+                                                        class="media-element"
+                                                    />
+                                                    <f:if condition="{mediaItem.originalResource.description}">
+                                                        <figcaption class="figcaption">{mediaItem.originalResource.description}</figcaption>
+                                                    </f:if>
+                                                </figure>
+                                            </f:for>
+                                        </div>
+                                    </f:if>
+                                </div>
+                            </details>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:then>
+            <f:else>
+                <p class="empty">
+                    <f:translate key="LLL:EXT:hh_ext_faqs/Resources/Private/Language/locallang.xlf:list.empty" />
+                </p>
+            </f:else>
+        </f:if>
+    </div>
+
+    <f:if condition="{structuredData}">
+        <script type="application/ld+json">{structuredData -> f:format.raw()}</script>
+    </f:if>
+</f:section>
+
+</html>

@@ -1,0 +1,16 @@
+settings:
+  hhExtFaqs.view.templateRootPath:
+    label: 'Template root path'
+    description: 'Path to overriding Fluid templates'
+    type: string
+    default: ''
+  hhExtFaqs.view.partialRootPath:
+    label: 'Partial root path'
+    description: 'Path to overriding Fluid partials'
+    type: string
+    default: ''
+  hhExtFaqs.view.layoutRootPath:
+    label: 'Layout root path'
+    description: 'Path to overriding Fluid layouts'
+    type: string
+    default: ''

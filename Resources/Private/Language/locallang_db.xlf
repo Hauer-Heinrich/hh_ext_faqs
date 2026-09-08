@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:hh_ext_faqs/Resources/Private/Language/locallang_db.xlf" date="2026-08-27T12:00:00Z" product-name="hh_ext_faqs">
+        <header/>
+        <body>
+            <trans-unit id="tx_hhextfaqs_domain_model_faq" resname="tx_hhextfaqs_domain_model_faq">
+                <source>FAQ</source>
+            </trans-unit>
+            <trans-unit id="tx_hhextfaqs_domain_model_faq.question" resname="tx_hhextfaqs_domain_model_faq.question">
+                <source>Question</source>
+            </trans-unit>
+            <trans-unit id="tx_hhextfaqs_domain_model_faq.answer" resname="tx_hhextfaqs_domain_model_faq.answer">
+                <source>Answer</source>
+            </trans-unit>
+            <trans-unit id="tx_hhextfaqs_domain_model_faq.media" resname="tx_hhextfaqs_domain_model_faq.media">
+                <source>Media</source>
+            </trans-unit>
+            <trans-unit id="tx_hhextfaqs_domain_model_faq.categories" resname="tx_hhextfaqs_domain_model_faq.categories">
+                <source>Categories</source>
+            </trans-unit>
+            <trans-unit id="tx_hhextfaqs_domain_model_faq.tabs.media" resname="tx_hhextfaqs_domain_model_faq.tabs.media">
+                <source>Media</source>
+            </trans-unit>
+            <trans-unit id="plugin.tab" resname="plugin.tab">
+                <source>Plugin</source>
+            </trans-unit>
+            <trans-unit id="plugin.list.title" resname="plugin.list.title">
+                <source>FAQ: List</source>
+            </trans-unit>
+            <trans-unit id="plugin.list.description" resname="plugin.list.description">
+                <source>Shows FAQ entries as an accessible accordion. Entries can be selected directly or loaded from folders, optionally filtered by categories.</source>
+            </trans-unit>
+            <trans-unit id="plugin.list.pages" resname="plugin.list.pages">
+                <source>FAQ folder(s) (used if no entries are selected directly)</source>
+            </trans-unit>
+            <trans-unit id="plugin.search.title" resname="plugin.search.title">
+                <source>FAQ: Search</source>
+            </trans-unit>
+            <trans-unit id="plugin.search.description" resname="plugin.search.description">
+                <source>Live search field that filters FAQ list plugins on the same page while typing (client-side, no page reload).</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.sheet.general" resname="flexform.list.sheet.general">
+                <source>FAQ selection</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.sheet.display" resname="flexform.list.sheet.display">
+                <source>Display</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.records" resname="flexform.list.records">
+                <source>FAQ entries (direct selection)</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.records.description" resname="flexform.list.records.description">
+                <source>If entries are selected here, they are shown in this order and the folder setting below is ignored. Leave empty to load all entries from the FAQ folder(s) configured under "Plugin".</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.categories" resname="flexform.list.categories">
+                <source>Filter by categories</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.categories.description" resname="flexform.list.categories.description">
+                <source>Only show FAQ entries assigned to the selected categories. Leave empty to show all entries.</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.categoryConjunction" resname="flexform.list.categoryConjunction">
+                <source>Category combination</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.categoryConjunction.or" resname="flexform.list.categoryConjunction.or">
+                <source>Entry has at least one of the selected categories (OR)</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.categoryConjunction.and" resname="flexform.list.categoryConjunction.and">
+                <source>Entry has all selected categories (AND)</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.sortField" resname="flexform.list.sortField">
+                <source>Sort by</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.sortField.sorting" resname="flexform.list.sortField.sorting">
+                <source>Manual order (backend sorting / selection order)</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.sortField.question" resname="flexform.list.sortField.question">
+                <source>Question (alphabetical)</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.sortField.crdate" resname="flexform.list.sortField.crdate">
+                <source>Creation date</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.sortOrder" resname="flexform.list.sortOrder">
+                <source>Sort order</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.sortOrder.asc" resname="flexform.list.sortOrder.asc">
+                <source>Ascending</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.sortOrder.desc" resname="flexform.list.sortOrder.desc">
+                <source>Descending</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.structuredData" resname="flexform.list.structuredData">
+                <source>Output schema.org FAQPage structured data (JSON-LD)</source>
+            </trans-unit>
+            <trans-unit id="flexform.list.structuredData.description" resname="flexform.list.structuredData.description">
+                <source>Adds machine-readable FAQ markup for search engines. If several FAQ lists are placed on the same page, enable this for one list only to avoid duplicate FAQPage markup.</source>
+            </trans-unit>
+            <trans-unit id="flexform.search.sheet.general" resname="flexform.search.sheet.general">
+                <source>Search</source>
+            </trans-unit>
+            <trans-unit id="flexform.search.listElements" resname="flexform.search.listElements">
+                <source>FAQ lists to search</source>
+            </trans-unit>
+            <trans-unit id="flexform.search.listElements.description" resname="flexform.search.listElements.description">
+                <source>Select the "FAQ: List" content elements on this page that this search should filter. Leave empty to search all FAQ lists on the page.</source>
+            </trans-unit>
+            <trans-unit id="flexform.search.autoExpand" resname="flexform.search.autoExpand">
+                <source>Expand matching entries while searching</source>
+            </trans-unit>
+            <trans-unit id="flexform.search.autoExpand.description" resname="flexform.search.autoExpand.description">
+                <source>If enabled, collapsed FAQ entries with a match are opened automatically while the search is active, so highlighted matches inside answers become visible. The previous open/closed state is restored when the search is cleared. If disabled, matches inside collapsed answers stay invisible until the visitor opens the entry.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:hh_ext_faqs/Resources/Private/Language/locallang.xlf" date="2026-08-27T12:00:00Z" product-name="hh_ext_faqs">
+        <header/>
+        <body>
+            <trans-unit id="list.empty" resname="list.empty">
+                <source>No FAQ entries available.</source>
+            </trans-unit>
+            <trans-unit id="search.label" resname="search.label">
+                <source>Search FAQ</source>
+            </trans-unit>
+            <trans-unit id="search.placeholder" resname="search.placeholder">
+                <source>Type your question …</source>
+            </trans-unit>
+            <trans-unit id="search.hint" resname="search.hint">
+                <source>Enter at least 3 characters to filter the questions.</source>
+            </trans-unit>
+            <trans-unit id="search.status.results" resname="search.status.results">
+                <source>{0} of {1} questions shown.</source>
+            </trans-unit>
+            <trans-unit id="search.status.noResults" resname="search.status.noResults">
+                <source>No questions match your search.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

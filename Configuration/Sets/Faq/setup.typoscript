@@ -1,0 +1,4 @@
+# The site set and the classic static template include share the same
+# TypoScript. Constants ({$hhExtFaqs.view.*}) are provided by the set settings
+# (settings.definitions.yaml) in this context.
+@import 'EXT:hh_ext_faqs/Configuration/TypoScript/setup.typoscript'
