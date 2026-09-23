@@ -1,6 +1,6 @@
 {
-    "name": "hauerheinrich/hh-ext-faqs",
     "type": "typo3-cms-extension",
+    "name": "hauerheinrich/hh-ext-faqs",
     "description": "Accessible, SEO friendly FAQ extension with live frontend search and jpfaq migration wizards",
     "keywords": [ "TYPO3 CMS", "TYPO3", "faq", "extension" ],
     "homepage": "https://www.hauer-heinrich.de",
@@ -41,7 +41,7 @@
             "cms-package-dir": "{$vendor-dir}/typo3/cms",
             "web-dir": ".Build/Web",
             "extension-key": "hh_ext_faqs",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "Package": {
                 "providesPackages": {}
             }
