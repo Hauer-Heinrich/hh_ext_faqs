@@ -26,11 +26,11 @@ class FaqController extends ActionController {
     public function listAction(): ResponseInterface {
         $contentObjectData = $this->request->getAttribute('currentContentObject')?->data ?? [];
 
-        $recordUids = GeneralUtility::intExplode(',', (string)($this->settings['records'] ?? ''), true);
-        $categoryUids = GeneralUtility::intExplode(',', (string)($this->settings['categories'] ?? ''), true);
-        $categoryConjunction = (string)($this->settings['categoryConjunction'] ?? 'or');
-        $sortField = (string)($this->settings['sortField'] ?? 'sorting');
-        $sortOrder = (string)($this->settings['sortOrder'] ?? 'asc');
+        $recordUids = GeneralUtility::intExplode(',', (string)($contentObjectData['tx_hhextfaqs_records'] ?? $this->settings['records'] ?? ''), true);
+        $categoryUids = GeneralUtility::intExplode(',', (string)($contentObjectData['tx_hhextfaqs_categories'] ?? $this->settings['categories'] ?? ''), true);
+        $categoryConjunction = (string)($contentObjectData['tx_hhextfaqs_category_conjunction'] ?? $this->settings['categoryConjunction'] ?? 'or');
+        $sortField = (string)($contentObjectData['tx_hhextfaqs_sort_field'] ?? $this->settings['sortField'] ?? 'sorting');
+        $sortOrder = (string)($contentObjectData['tx_hhextfaqs_sort_order'] ?? $this->settings['sortOrder'] ?? 'asc');
 
         if ($recordUids !== []) {
             $faqs = $this->faqRepository->findByUids(
